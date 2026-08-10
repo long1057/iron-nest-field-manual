@@ -11,9 +11,6 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
-  other: {
-    "google-site-verification": "fEfaJjdgOYLmkMZwpLRShIPp999sif8--5-WKxfVL3Q",
-  },
 };
 
 export default function RootLayout({
