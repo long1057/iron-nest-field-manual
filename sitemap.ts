@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://iron-nest-field-manual.l016040610.chatgpt.site";
+// Set this only after choosing and approving the real deployment hostname.
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
@@ -20,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return paths.map((path) => ({
-    url: `${siteUrl}${path}`,
+    url: siteUrl + path,
     changeFrequency: "weekly",
     priority: path === "/" ? 1 : 0.7,
   }));
