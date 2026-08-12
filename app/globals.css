@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 :root {
   --ink: #17201d;
   --ink-soft: #53605a;
@@ -292,4 +290,3 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--amber); outline
   html { scroll-behavior: auto; }
   .page-card { transition: none; }
 }
-
